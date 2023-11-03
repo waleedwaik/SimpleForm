@@ -1,0 +1,96 @@
+.orangeBackground{
+	background-color: coral;
+	color: #fff;
+}
+
+/*this class ensures the content is placed at th center*/
+.centerItems{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+}
+
+div.button button{
+	height: 45px;
+	border: none;
+	text-transform: uppercase;
+	border-radius: .25rem;
+	align-items:center;
+	background-color: rgb(108,117,125, .7);
+	box-shadow: 1px 1px 4px rgb(0,0,0, .6);
+	color: #fff;
+	
+}
+
+div.button button:hover{
+	background-color: rgb(108,117,125, .9);
+}
+div.button{
+	display: flex;
+	justify-content: flex-end;
+
+}
+.required{
+	position: relative;
+}
+
+/*let's make the icons visible when user is typing*/
+.required input:focus{
+ position: relative;
+}
+
+/*stlye the error displayed*/
+.required #nameMsg, #emailMsg, #pswdMsg, #pswd2Msg, #dateMsg, #errorMsg{
+	position: absolute;
+	bottom: -10px;
+	color: rgba(0,0,0,.7);
+	/*background: #fff;
+	max-width: 100%;
+	max-height: 100%;
+	padding:5px;*/
+}
+
+.required #nameIcon, #emailIcon, #pswdIcon, #pswd2Icon {
+	position: absolute;
+	right: 5px;
+	bottom:25px;
+	z-index: 10;
+}
+
+
+
+#show {
+	background-color: #fff;
+	color: #555;
+	height: 13em;
+	width: 20rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-inline:2%;
+	
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+	font-size: 1.3rem;
+	transform: translate(-50%, -50%);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	
+	/*animation: expand;
+	animation-duration: 4s;*/
+	}
+
+#show p{
+	animation: expand;
+	animation-duration: 4s;
+}
+
+@keyframes expand{
+ from{
+ 	transform: scale(0);
+ }
+ to{
+ 	transform: scale(1);
+ }
+}
